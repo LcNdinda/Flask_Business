@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <h1>Reviews</h1>
+  <ul class="list-group">
+    {% for review in reviews %}
+    <li class="list-group-item"><a href="review/{{review.id}}">{{review.title}}</a></li>
+      {% endfor %}
+  </ul>
+
+{% endblock %}
